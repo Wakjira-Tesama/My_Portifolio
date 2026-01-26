@@ -55,7 +55,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.23.24",
+    "framer-motion": "^12.29.2",
     "maath": "^0.10.8",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
