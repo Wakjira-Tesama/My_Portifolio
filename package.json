@@ -9,7 +9,7 @@
   },
   "engines": {
   "node": "18.x"
-}
+},
 
   "description": "Modern 3D Portfolio using React, Three.js and Typescript",
   "keywords": [
