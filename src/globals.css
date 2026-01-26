@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+
+html,
+body {
+  height: 100%;
+  background-color: #0b0d1a;
+  color: #ffffff;
+  font-family:
+    "Inter",
+    "Poppins",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ------------------------------
+   TYPOGRAPHY
+--------------------------------*/
+
+.h1 {
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+/* ------------------------------
+   COLORS
+--------------------------------*/
+
+.bg-primary {
+  background-color: #0b0d1a;
+}
+
+.text-accent {
+  color: #ff2d2d;
+}
+
+/* ------------------------------
+   HERO BACKGROUNDS
+--------------------------------*/
+
+/* Subtle digital glow */
+.bg-explosion {
+  background-image: radial-gradient(
+    circle at right center,
+    rgba(255, 45, 45, 0.35),
+    transparent 60%
+  );
+}
+
+/* ------------------------------
+   EFFECTS
+--------------------------------*/
+
+.mix-blend-color-dodge {
+  mix-blend-mode: color-dodge;
+}
+
+.translate-z-0 {
+  transform: translateZ(0);
+}
+
+/* ------------------------------
+   AVATAR (BOTTOM TOUCH – NO RESIZE)
+--------------------------------*/
+
+.avatar-wrapper {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end; /* push image to bottom */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.avatar-img {
+  height: 90%; /* keep original image height */
+  max-height: 800px; /* your intended size */
+  width: auto;
+  object-fit: contain;
+}
+
+/* ------------------------------
+   TEXT SAFETY (NO OVERLAP)
+--------------------------------*/
+
+@media (min-width: 1280px) {
+  .hero-content {
+    padding-right: 420px;
+  }
+}
+
+/* ------------------------------
+   MOBILE RESPONSIVE
+--------------------------------*/
+
+@media (max-width: 1024px) {
+  .avatar-wrapper {
+    display: none;
+  }
+}

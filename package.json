@@ -7,6 +7,10 @@
     "email": "sanidhya.verma12345@gmail.com",
     "url": "https://github.com/sanidhyy"
   },
+  "engines": {
+  "node": "18.x"
+}
+
   "description": "Modern 3D Portfolio using React, Three.js and Typescript",
   "keywords": [
     "reactjs",
